@@ -43,8 +43,14 @@ function convertCurrency(amount, price, symbol) {
     // Calcula o total
     let total = amount * price
 
+    // Verifica se o resultado não é um numero
+    if (isNaN(total)) {
+      return alert("Por favor, digite o valor corretamente para converter.")
+    }
     //exibe o resultado total.
+    total = formatCurrencyBRL(total).replace("R$", "")
     result.textContent = total
+
 
     // Aplica a classe que exibe o footer para mostrar o resultado.
     footer.classList.add("show-result")
@@ -59,5 +65,5 @@ function convertCurrency(amount, price, symbol) {
 
 function formatCurrencyBRL(value) {
   // Converte para número e utiliza o toLocaleString para formatar no padrão BRL.
-  return Number(value).toLocaleString("pt-Br", {style: "currency", currency: "BRL"})
+  return Number(value).toLocaleString("pt-BR", {style: "currency", currency: "BRL"})
 }
