@@ -1,7 +1,7 @@
 ### Sobre o projeto
 
 App java script para converter real em outras moedas .   
-Trabalhando com js e html e css.  
+Trabalhando com js, html e css.  
 Projeto realizado no MBA Rocketseat Full-stack. (https://www.rocketseat.com.br/mba)  
 
 ### Visualizar 
